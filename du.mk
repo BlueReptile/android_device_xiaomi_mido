@@ -14,12 +14,15 @@
 # limitations under the License.
 #
 
+# Pixel apps
+IS_ARM64 := true
+
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common DU stuff.
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_mido
+PRODUCT_NAME := du_mido
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
